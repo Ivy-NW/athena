@@ -29,29 +29,30 @@ const Navbar = () => {
             {isMenuOpen ? <X size={24} className="text-purple-700" /> : <Menu size={24} className="text-purple-700" />}
           </button>
 
-          {/* Desktop navigation */}
-          <div className="hidden lg:flex gap-6 items-center">
+          {/* Desktop navigation - centered and with neumorphism */}
+          <div className="hidden lg:flex gap-6 items-center justify-center flex-1 mx-auto">
             <Link
               href="/how-it-works"
-              className="text-purple-800 hover:text-pink-600 transition-colors duration-300"
+              className="text-purple-900 font-medium hover:text-pink-600 transition-all duration-300 px-4 py-2 rounded-xl bg-gradient-to-br from-white/80 to-purple-100/50 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)]"
             >
               How it Works
             </Link>
             <Link
               href="/campaign"
-              className="text-purple-800 hover:text-pink-600 transition-colors duration-300"
+              className="text-purple-900 font-medium hover:text-pink-600 transition-all duration-300 px-4 py-2 rounded-xl bg-gradient-to-br from-white/80 to-purple-100/50 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)]"
             >
               Campaigns
             </Link>
             <Link
               href="/create-campaign"
-              className="text-purple-800 hover:text-pink-600 transition-colors duration-300"
+              className="text-purple-900 font-medium hover:text-pink-600 transition-all duration-300 px-4 py-2 rounded-xl bg-gradient-to-br from-white/80 to-purple-100/50 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)]"
             >
               Start Fundraising
             </Link>
-            <div className="backdrop-blur-md bg-white/30 p-1 rounded-full border border-white/40 shadow-md">
-              <ConnectButton />
-            </div>
+          </div>
+          
+          <div className="hidden lg:block backdrop-blur-md bg-white/30 p-1 rounded-full border border-white/40 shadow-md hover:shadow-[0_0_15px_rgba(219,39,119,0.3)] transition-all duration-300">
+            <ConnectButton />
           </div>
         </div>
 
@@ -76,21 +77,21 @@ const Navbar = () => {
           <div className="flex flex-col gap-4 p-6">
             <Link
               href="/how-it-works"
-              className="text-purple-800 hover:bg-gradient-to-r hover:from-pink-100/50 hover:to-purple-100/50 rounded-xl py-3 px-4 transition-all duration-300"
+              className="text-purple-900 font-medium bg-gradient-to-br from-white/80 to-purple-100/50 rounded-xl py-3 px-4 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:text-pink-600 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)] transition-all duration-300"
               onClick={toggleMenu}
             >
               How it Works
             </Link>
             <Link
               href="/campaign"
-              className="text-purple-800 hover:bg-gradient-to-r hover:from-pink-100/50 hover:to-purple-100/50 rounded-xl py-3 px-4 transition-all duration-300"
+              className="text-purple-900 font-medium bg-gradient-to-br from-white/80 to-purple-100/50 rounded-xl py-3 px-4 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:text-pink-600 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)] transition-all duration-300"
               onClick={toggleMenu}
             >
               Campaigns
             </Link>
             <Link
               href="/create-campaign"
-              className="text-purple-800 hover:bg-gradient-to-r hover:from-pink-100/50 hover:to-purple-100/50 rounded-xl py-3 px-4 transition-all duration-300"
+              className="text-purple-900 font-medium bg-gradient-to-br from-white/80 to-purple-100/50 rounded-xl py-3 px-4 shadow-[5px_5px_10px_rgba(0,0,0,0.05),-5px_-5px_10px_rgba(255,255,255,0.8)] hover:shadow-[inset_5px_5px_10px_rgba(0,0,0,0.05),inset_-5px_-5px_10px_rgba(255,255,255,0.8)] border border-purple-100/50 hover:border-pink-200/70 hover:text-pink-600 hover:bg-gradient-to-br hover:from-white/90 hover:to-pink-100/50 hover:shadow-[0_0_15px_rgba(219,39,119,0.3)] transition-all duration-300"
               onClick={toggleMenu}
             >
               Start Fundraising
