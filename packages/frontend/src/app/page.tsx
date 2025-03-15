@@ -4,6 +4,7 @@ import { Heart, Users, Globe, ChevronDown, ArrowRight, BookOpen, Award, Search }
 import Image from "next/image";
 import Link from "next/link";
 import { UrgentCampaign } from "@/components/campaigns/urgentCampaign";
+import EduAssistant from "@/components/edu-assistant";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <div className="absolute top-[5%] left-[10%] w-[150px] h-[100px] rounded-[40%_60%_60%_40%] bg-gradient-to-r from-purple-200 to-blue-200 opacity-90 transform rotate-12"></div>
         <div className="absolute bottom-[10%] left-[40%] w-[180px] h-[90px] rounded-[60%_40%_50%_50%] bg-gradient-to-tr from-pink-200 to-purple-200 opacity-90 transform -rotate-15"></div>
       </div>
+      <EduAssistant />
       
       <Navbar />
       

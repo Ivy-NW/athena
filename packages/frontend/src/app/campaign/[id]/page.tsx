@@ -18,6 +18,7 @@ import { Campaign } from "@/types/crowdfunding";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { useContractEvent } from "@/blockchain/hooks/useContractEvent";
+import EduAssistant from "@/components/edu-assistant";
 import { ArrowRight, Heart } from "lucide-react";
 
 export default function CampaignPage() {
@@ -180,6 +181,7 @@ export default function CampaignPage() {
         <div className="absolute bottom-[30%] left-[25%] w-[80px] h-[80px] rounded-full bg-gradient-to-r from-pink-300 to-pink-200 opacity-90"></div>
         <div className="absolute bottom-[20%] right-[30%] w-[120px] h-[120px] rounded-full bg-gradient-to-l from-blue-200 to-purple-100 opacity-90"></div>
       </div>
+      <EduAssistant />
       
       <Navbar />
 

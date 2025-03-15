@@ -3,6 +3,7 @@
 import Navbar from "@/components/navbar";
 import { ChevronDown, Heart, Mail, FileText, Building } from "lucide-react";
 import React from "react";
+import EduAssistant from "@/components/edu-assistant";
 
 const HowItWorksPage = () => {
   return (
@@ -16,6 +17,7 @@ const HowItWorksPage = () => {
         <div className="absolute bottom-[30%] left-[25%] w-[80px] h-[80px] rounded-full bg-gradient-to-r from-pink-300 to-pink-200 opacity-90"></div>
         <div className="absolute bottom-[20%] right-[30%] w-[120px] h-[120px] rounded-full bg-gradient-to-l from-blue-200 to-purple-100 opacity-90"></div>
       </div>
+      <EduAssistant />
       
       <Navbar />
 

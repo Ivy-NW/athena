@@ -7,6 +7,7 @@ import { useCrowdfunding } from "@/blockchain/hooks/useCrowdfunding";
 import { isAddress } from "ethers";
 import { ArrowLeft, UserPlus, UserMinus, ShieldAlert } from "lucide-react";
 import Link from "next/link";
+import EduAssistant from "@/components/edu-assistant";
 
 export default function GrantCreator() {
   const router = useRouter();
@@ -78,6 +79,7 @@ export default function GrantCreator() {
         <div className="absolute bottom-[30%] left-[25%] w-[80px] h-[80px] rounded-full bg-gradient-to-r from-pink-300 to-pink-200 opacity-90"></div>
         <div className="absolute bottom-[20%] right-[30%] w-[120px] h-[120px] rounded-full bg-gradient-to-l from-blue-200 to-purple-100 opacity-90"></div>
       </div>
+      <EduAssistant />
 
       <div className="container mx-auto px-4 max-w-2xl relative z-10">
         <div className="mb-8 flex justify-between items-center">
